@@ -48,15 +48,3 @@ if driver.find_element(by=AppiumBy.XPATH, value="//android.widget.TextView[@reso
     #Click on Sign in
     driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Sign in").click()
 
-
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Session").click()
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Skip the tutorial").click()
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Start session").click()
