@@ -45,15 +45,19 @@ date.send_keys('1995')
 driver.back()
 
 # driver.find_element(by=AppiumBy.XPATH, value="//android.view.View[@content-desc='Give the information below What year were you born? Are you currently a student? Yes No What is the highest level of education you have completed?']/android.widget.CheckBox[2]").click()
-element = driver.find_elements(by=AppiumBy.CLASS_NAME, value='android.widget.CheckBox')
-actions = TouchAction(driver)
-actions.press(element[1]).press()
+
 #Scroll to End
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
+#Couldn't find correct locator to Select Yes/No
+# element = driver.find_elements(by=AppiumBy.CLASS_NAME, value='android.widget.CheckBox')
+# actions = TouchAction(driver)
+# actions.press(element[1]).perform().release()
+
 dropdown = driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Choose")
 dropdown.click()
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Completed secondary school").click()
+driver.back()
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Start Session").click()
 
 
