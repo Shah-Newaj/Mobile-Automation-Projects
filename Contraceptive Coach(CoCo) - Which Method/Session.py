@@ -3,6 +3,7 @@ from appium import webdriver
 from typing import Any, Dict
 from appium.options.common import AppiumOptions
 from appium.webdriver.common.appiumby import AppiumBy
+from appium.webdriver.common.touch_action import TouchAction
 from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
@@ -36,14 +37,17 @@ driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Skip the tutorial").cli
 #Scroll to End
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
-
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Start session").click()
+
 date = driver.find_element(by=AppiumBy.XPATH, value="//android.widget.EditText[@text='YYYY']")
 date.click()
 date.send_keys('1995')
 driver.back()
 
-driver.find_element(by=AppiumBy.XPATH, value="//android.view.View[@content-desc='Give the information below What year were you born? Are you currently a student? Yes No What is the highest level of education you have completed?']/android.widget.CheckBox[2]").click()
+# driver.find_element(by=AppiumBy.XPATH, value="//android.view.View[@content-desc='Give the information below What year were you born? Are you currently a student? Yes No What is the highest level of education you have completed?']/android.widget.CheckBox[2]").click()
+element = driver.find_elements(by=AppiumBy.CLASS_NAME, value='android.widget.CheckBox')
+actions = TouchAction(driver)
+actions.press(element[1]).press()
 #Scroll to End
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
