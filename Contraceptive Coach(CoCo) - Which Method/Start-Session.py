@@ -300,4 +300,3 @@ driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelect
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
