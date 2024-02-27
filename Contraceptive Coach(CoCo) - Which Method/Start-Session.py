@@ -76,227 +76,385 @@ driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelect
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
 
 #Q8_1
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
 #Scroll to End
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
 
 #Q8_2
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_3
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+# #Q8_4
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+# #Q8_5
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_6
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_7
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_8
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_9
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_10
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_11
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_12
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_13
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_14
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_15
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_16
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+# #Q8_17
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+# SeekBar Code
+seek_bar = driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar')
+start = seek_bar.location['x']
+end = seek_bar.size['width']
+y = seek_bar.location['y']
+action = TouchAction(driver)
+# move seekbar to the end
+# action.press(x=start, y=y).move_to(x=end, y=y).release().perform()
+#move seekbar to 40%
+moveTo = (end * 0.45)
+action.press(x=start, y=y).move_to(x=moveTo, y=y).release().perform()
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q9
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Have you ever used any '
+                                                        'method of contraception?"]/android.widget.ImageView['
+                                                        '4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q20_intro
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+
+#Q20
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Do you have at least three periods '
+                                             'per year?"]/android.widget.ImageView[3]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q21
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="When you are not using '
+                                                        'contraception, do you have very heavy '
+                                                        'periods?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q22
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="When you are not using '
+                                                        'contraception, do you have periods that last longer than 7 '
+                                                        'days?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+#Q23
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="When you are not using '
+                                             'contraception, do you have painful periods or bad '
+                                             'cramps?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+#Q24_intro
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+
+#Q24
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='you are not currently having sex').click()
 #Scroll to End
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
 
-#Q8_3
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
+#Q25
+Q25 = driver.find_element(by=AppiumBy.XPATH, value='//android.widget.EditText[@text="Type here"]')
+Q25.click()
+Q25.send_keys('1')
+driver.back()
 #Scroll to End
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
 
-#Q8_4
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
+#Q26_intro
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+
+#Q26
+driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]').click()
 #Scroll to End
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_5
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_6
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_7
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_8
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_9
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_10
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_11
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_12
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_13
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_14
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_15
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_16
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q8_17
-# driver.find_element(by=AppiumBy.CLASS_NAME, value='android.widget.SeekBar').send_keys('70')
-#Scroll to End
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Yes').click()
-
-#Q14: 13_10
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_11
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_12
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_13
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_14
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_15
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_16
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_18
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_3
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_4
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_5
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_6
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_7
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_8
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
-
-#Q14: 13_9
-driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
-                                                      'true)).setAsVerticalList().scrollToEnd(5)')
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='None of these problems').click()
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
