@@ -429,8 +429,11 @@ driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelect
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
 
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
 #Q24_intro
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+# driver.find_element(by=AppiumBy.XPATH, value='//android.widget.Button[@content-desc="Next"]').click()
+el1 = wait.until(EC.presence_of_element_located((AppiumBy.XPATH, "//android.widget.Button[@content-desc='Next']")))
+el1.click()
 
 #Q24
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='you are not currently having sex').click()
@@ -450,7 +453,9 @@ driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelect
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
 
 #Q26_intro
-driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+# driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+el2 = wait.until(EC.presence_of_element_located((AppiumBy.ACCESSIBILITY_ID, "Next")))
+el2.click()
 
 #Q26
 driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]').click()
@@ -458,3 +463,212 @@ driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/androi
 driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
                                                       'true)).setAsVerticalList().scrollToEnd(5)')
 driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q27
+driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.View/android.widget.ImageView[6]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q28
+driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.View/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q29
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Do you have severe acne?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q30
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Do you have coarse, dark hairs on '
+                                             'your face?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q31_intro
+# driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+el3 = wait.until(EC.presence_of_element_located((AppiumBy.ACCESSIBILITY_ID, "Next")))
+el3.click()
+
+#Q31
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="The contraceptive pill requires that '
+                                             'you take a pill every single day. Could you remember to take a pill '
+                                             'every single day?"]/android.widget.ImageView[3]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q32
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="The contraceptive shot requires that '
+                                             'you return to the clinic every three months to get a shot, would you be '
+                                             'able to do this?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q36
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Would you feel comfortable having an '
+                                             'IUD, a T-shaped contraceptive, placed by your provider inside your '
+                                             'uterus that would provide contraception for up to 5-10 '
+                                             'years?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q37
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="The contraceptive implant is one or '
+                                             'two small rods placed by your provider under the skin of your upper arm '
+                                             'that provides contraception for up to 5 years.  Would you feel '
+                                             'comfortable using the contraceptive implant as a contraceptive '
+                                             'method?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q38
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Other").click()
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q39_intro
+# driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value='Next').click()
+el3 = wait.until(EC.presence_of_element_located((AppiumBy.ACCESSIBILITY_ID, "Next")))
+el3.click()
+
+#Q39
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="No").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q41
+driver.find_element(by=AppiumBy.XPATH, value="//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q42
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Have you had surgery in the past '
+                                             'three months?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q44
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Has a doctor, nurse, or health '
+                                             'professional ever told you that you had '
+                                             'diabetes?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q46
+driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q47
+driver.find_element(by=AppiumBy.XPATH, value='//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q48
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Do you have an aura with migraine or '
+                                             'severe headache? An aura is seeing spots or wavy lines before or during '
+                                             'the migraine headache."]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q49
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="No").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q50
+driver.find_element(by=AppiumBy.XPATH, value="//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q51
+driver.find_element(by=AppiumBy.XPATH, value="//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q52
+driver.find_element(by=AppiumBy.XPATH, value="//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q55
+driver.find_element(by=AppiumBy.XPATH, value="//android.widget.ScrollView/android.view.View/android.widget.ImageView[4]").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q56
+driver.find_element(by=AppiumBy.XPATH, value="//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q57
+driver.find_element(by=AppiumBy.XPATH, value="//android.widget.ScrollView/android.view.View/android.widget.ImageView[5]").click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q58
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Do you take dietary supplements or '
+                                             'prescription medications regularly?"]/android.widget.ImageView['
+                                             '3]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q104
+driver.find_element(by=AppiumBy.XPATH, value='//android.view.View[@content-desc="Have you ever become pregnant when '
+                                             'you did not want to be?"]/android.widget.ImageView[4]').click()
+#Scroll to End
+driver.find_element(AppiumBy.ANDROID_UIAUTOMATOR, 'new UiScrollable(new UiSelector().scrollable('
+                                                      'true)).setAsVerticalList().scrollToEnd(5)')
+driver.find_element(by=AppiumBy.ACCESSIBILITY_ID, value="Next").click()
+
+#Q105
+el3 = wait.until(EC.presence_of_element_located((AppiumBy.ACCESSIBILITY_ID, "Next")))
+el3.click()
